@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trafera.one - Gestión de trámites vehiculares en CDMX</title>
     <meta name="description" content="Realizamos por ti los trámites relacionados con tenencia y certificados para que no pierdas tiempo">
-    <link rel="stylesheet" href="./dist/output.css">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="./dist/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./dist/output.css"></noscript>
+    
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 <body class="font-sans">
@@ -765,9 +769,6 @@
         </div>
     </section>
 
-
-
-    <!-- Footer -->
     <footer class="bg-heading text-white section-padding">
         <div class="container-custom">
             <div class="grid md:grid-cols-4 gap-8">
