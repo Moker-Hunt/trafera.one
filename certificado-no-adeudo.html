@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado de No Adeudo - Trafera.one</title>
+    <meta name="description" content="Solicita tu certificado de no adeudo vehicular en CDMX de forma rápida y segura">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-heading">Trafera.one</h1>
+                        <p class="text-xs text-text">Servicios de gestión vehicular</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html#servicios" class="text-text hover:text-primary transition-colors">Servicios</a>
+                    <a href="index.html#como-funciona" class="text-text hover:text-primary transition-colors">Cómo funciona</a>
+                    <a href="contacto.html" class="text-text hover:text-primary transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2 bg-light-bg">
+                <a href="index.html#servicios" class="block py-2 text-text hover:text-primary">Servicios</a>
+                <a href="index.html#como-funciona" class="block py-2 text-text hover:text-primary">Cómo funciona</a>
+                <a href="contacto.html" class="block py-2 text-text hover:text-primary">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="section-padding">
+        <div class="container-custom">
+                               <!-- Header Section -->
+                   <div class="text-center mb-12">
+                       <h1 class="text-4xl md:text-5xl font-bold text-heading mb-6">
+                           Solicita tu certificado de no adeudo
+                       </h1>
+                       <div class="max-w-4xl mx-auto">
+                           <p class="text-lg text-text leading-relaxed">
+                               El <strong>Certificado de No Adeudo</strong> es un documento oficial emitido por la Secretaría de Finanzas de la CDMX que acredita que tu vehículo no tiene adeudos pendientes de tenencia, refrendo o infracciones.
+                           </p>
+                           <p class="text-lg text-text leading-relaxed mt-4">
+                               <strong>Trafera.one</strong> actúa como intermediario para que obtengas este documento de forma rápida y segura. Nos encargamos de gestionar el proceso en el portal oficial utilizando los datos que nos proporciones.
+                           </p>
+                           <div class="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg inline-block">
+                               <p class="text-sm text-yellow-800 font-medium">
+                                   🏛️ Servicio independiente — no afiliado al gobierno
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+
+            <!-- Form Section -->
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-card p-8">
+                    <form class="space-y-6">
+                        <!-- Personal Information -->
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-heading mb-4">Información Personal</h3>
+                            
+                            <div>
+                                <label for="fullName" class="block text-sm font-medium text-heading mb-2">
+                                    Nombre completo <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="fullName" name="fullName" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                    placeholder="Ingresa tu nombre completo">
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="curp" class="block text-sm font-medium text-heading mb-2">
+                                        CURP <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="curp" name="curp" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                        placeholder="Ingresa tu CURP">
+                                </div>
+                                <div>
+                                    <label for="rfc" class="block text-sm font-medium text-heading mb-2">
+                                        RFC <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="rfc" name="rfc" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                        placeholder="Ingresa tu RFC">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-heading mb-2">
+                                        Correo electrónico <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                        placeholder="tu@email.com">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-heading mb-2">
+                                        Teléfono <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                        placeholder="+52 55 1234 5678">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle Information -->
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-heading mb-4">Información del Vehículo</h3>
+                            
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="plate" class="block text-sm font-medium text-heading mb-2">
+                                        Placa del vehículo <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="plate" name="plate" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                        placeholder="ABC-1234">
+                                </div>
+                                <div>
+                                    <label for="vin" class="block text-sm font-medium text-heading mb-2">
+                                        Número de serie (VIN) <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="vin" name="vin" required
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                        placeholder="17 caracteres">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="year" class="block text-sm font-medium text-heading mb-2">
+                                    Año del vehículo <span class="text-red-500">*</span>
+                                </label>
+                                <input type="number" id="year" name="year" required min="1900" max="2030"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                                    placeholder="2020">
+                            </div>
+                        </div>
+
+                        <!-- Document Upload -->
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-heading mb-4">Documentación</h3>
+                            
+                            <div>
+                                <label for="tenancyProof" class="block text-sm font-medium text-heading mb-2">
+                                    Comprobante de tenencia reciente (opcional)
+                                </label>
+                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-primary transition-colors">
+                                    <input type="file" id="tenancyProof" name="tenancyProof" accept=".pdf,.jpg,.jpeg,.png"
+                                        class="hidden">
+                                    <label for="tenancyProof" class="cursor-pointer">
+                                        <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                                        </svg>
+                                        <p class="text-sm text-text">
+                                            <span class="text-primary font-medium">Haz clic para subir</span> o arrastra el archivo aquí
+                                        </p>
+                                        <p class="text-xs text-gray-500 mt-2">PDF, JPG, JPEG, PNG (máx. 10MB)</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-heading mb-4">Términos y Condiciones</h3>
+                            
+                            <div class="space-y-3">
+                                <div class="flex items-start space-x-3">
+                                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required
+                                        class="mt-1 w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary">
+                                    <label for="privacyPolicy" class="text-sm text-text">
+                                        <span class="text-red-500">*</span> Acepto la 
+                                        <a href="politica-privacidad.html" class="text-primary hover:underline font-medium">Política de Privacidad</a>
+                                    </label>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <input type="checkbox" id="dataAccuracy" name="dataAccuracy" required
+                                        class="mt-1 w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary">
+                                    <label for="dataAccuracy" class="text-sm text-text">
+                                        <span class="text-red-500">*</span> Declaro que los datos proporcionados son correctos y autorizo a Trafera.one para gestionar el trámite en mi representación
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="pt-6">
+                            <button type="submit" 
+                                class="w-full btn-primary text-lg py-4">
+                                Solicitar certificado
+                            </button>
+                            <p class="text-center text-sm text-gray-500 mt-3">
+                                ⏱️ Tiempo estimado de entrega: 24–72 horas hábiles
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Security Notice -->
+    <section class="section-padding bg-light-bg">
+        <div class="container-custom">
+            <div class="max-w-2xl mx-auto text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-heading">🔒 Tus datos están protegidos</h3>
+                </div>
+                <p class="text-text">
+                    Solo los usamos para realizar tu trámite. No los compartimos con terceros.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                    Cómo funciona
+                </h2>
+                <p class="text-xl text-text max-w-3xl mx-auto">
+                    Proceso simple y transparente en solo 3 pasos
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-heading mb-3">Envíanos tus datos</h3>
+                    <p class="text-text">Completa el formulario con la información de tu vehículo</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-heading mb-3">Gestionamos por ti el trámite</h3>
+                    <p class="text-text">Realizamos el proceso en el portal oficial</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-heading mb-3">Recibes el resultado por email</h3>
+                    <p class="text-text">Te enviamos el certificado en PDF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light-bg relative overflow-hidden">
+        <!-- Background illustration -->
+        <div class="hidden lg:block absolute top-0 right-0 w-64 h-64 opacity-10">
+            <svg class="w-full h-full text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+            </svg>
+        </div>
+        
+        <div class="container-custom relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                    Preguntas frecuentes
+                </h2>
+                <p class="text-xl text-text max-w-3xl mx-auto">
+                    Resolvemos tus dudas más comunes
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-gradient-to-r from-white to-green-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(1)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿Cuánto tarda el trámite?
+                                    <svg id="icon-1" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-1" class="text-text" style="display: none;">
+                                El tiempo estimado es de 24 a 72 horas hábiles. En la mayoría de casos, recibes el certificado el mismo día o al día siguiente.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gradient-to-r from-white to-blue-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(2)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿Es seguro proporcionar mis datos?
+                                    <svg id="icon-2" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-2" class="text-text" style="display: none;">
+                                Sí, completamente seguro. Utilizamos conexiones encriptadas y solo usamos tus datos para realizar el trámite oficial. No los compartimos con terceros.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gradient-to-r from-white to-purple-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(3)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿Puedo obtener el documento sin salir de casa?
+                                    <svg id="icon-3" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-3" class="text-text" style="display: none;">
+                                ¡Absolutamente! Todo el proceso es 100% online. Solo necesitas completar el formulario y recibirás el certificado por email en PDF.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gradient-to-r from-white to-orange-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(4)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿Qué pasa si tengo adeudos?
+                                    <svg id="icon-4" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-4" class="text-text" style="display: none;">
+                                Si tu vehículo tiene adeudos pendientes, te informaremos antes de proceder. En ese caso, necesitarás regularizar tu situación primero.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-heading text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold">Trafera.one</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Servicios de gestión vehicular en la Ciudad de México. 
+                        <strong>No somos un sitio oficial del gobierno.</strong>
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Ciudad de México</p>
+                        <p>contacto@trafera.one</p>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Información Legal</h4>
+                    <div class="space-y-2">
+                        <a href="politica-privacidad.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de privacidad
+                        </a>
+                        <a href="aviso-legal.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Aviso legal
+                        </a>
+                        <a href="terminos-condiciones.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Términos y condiciones
+                        </a>
+                        <a href="politica-cookies.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Trafera.one. Todos los derechos reservados.</p>
+                <p class="text-sm mt-2">
+                    <strong>Importante:</strong> Este sitio no es oficial del gobierno de la Ciudad de México.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner Styles -->
+    <style>
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        .cookie-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .cookie-modal.show {
+            display: flex;
+        }
+
+        .cookie-modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cookie-category {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cookie-category.required {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2E7D32;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+        input:disabled + .slider {
+            background-color: #2E7D32;
+            cursor: not-allowed;
+        }
+    </style>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container-custom py-4">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-heading mb-2">🍪 <strong>Usamos cookies</strong></h3>
+                    <p class="text-sm text-text mb-4">
+                        Utilizamos cookies propias y de terceros para garantizar el funcionamiento del sitio web, personalizar el contenido, ofrecer funciones de redes sociales y analizar el tráfico. También compartimos información sobre el uso que haga del sitio con nuestros socios de análisis y publicidad, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
+                    </p>
+                    <p class="text-sm text-text mb-4">
+                        Puedes aceptar todas las cookies, rechazarlas, o configurar cuáles deseas permitir. Puedes cambiar tu configuración en cualquier momento.
+                    </p>
+                    <p class="text-sm text-text mb-4">
+                        Consulta nuestra <a href="politica-cookies.html" class="text-primary hover:underline">Política de cookies</a> para más información.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <button id="cookie-reject" class="px-4 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        Rechazar
+                    </button>
+                    <button id="cookie-settings" class="px-4 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        Configurar
+                    </button>
+                    <button id="cookie-accept" class="px-4 py-2 text-sm bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+                        Aceptar todas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="cookie-modal-content p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-heading">Configuración de cookies</h2>
+                <button id="close-modal" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-4 mb-6">
+                <div class="cookie-category required">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">🍪 Cookies necesarias</h3>
+                            <p class="text-sm text-text mb-2">
+                                Requeridas para el funcionamiento básico del sitio. No pueden ser desactivadas.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• session_id: Mantiene tu sesión activa</li>
+                                <li>• csrf_token: Protección de seguridad</li>
+                                <li>• language: Tu idioma preferido</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" checked disabled>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">📊 Cookies de análisis</h3>
+                            <p class="text-sm text-text mb-2">
+                                Nos ayudan a entender cómo utilizas nuestro sitio para mejorarlo.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• Google Analytics: Análisis de tráfico</li>
+                                <li>• _gat: Control de frecuencia</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" id="analytics-cookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">🎯 Cookies de marketing</h3>
+                            <p class="text-sm text-text mb-2">
+                                Utilizadas para mostrar publicidad relevante y medir campañas.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• Meta Pixel: Seguimiento de conversiones</li>
+                                <li>• Google Ads: Optimización publicitaria</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" id="marketing-cookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 justify-end">
+                <button id="save-preferences" class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+                    Guardar preferencias
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Cookie management
+        class CookieManager {
+            constructor() {
+                this.cookieConsent = this.getCookieConsent();
+                this.init();
+            }
+
+            init() {
+                if (!this.cookieConsent) {
+                    this.showBanner();
+                }
+                this.setupEventListeners();
+            }
+
+            getCookieConsent() {
+                return localStorage.getItem('cookieConsent');
+            }
+
+            setCookieConsent(consent) {
+                localStorage.setItem('cookieConsent', JSON.stringify(consent));
+            }
+
+            showBanner() {
+                const banner = document.getElementById('cookie-banner');
+                setTimeout(() => {
+                    banner.classList.add('show');
+                }, 1000);
+            }
+
+            hideBanner() {
+                const banner = document.getElementById('cookie-banner');
+                banner.classList.remove('show');
+            }
+
+            showModal() {
+                const modal = document.getElementById('cookie-modal');
+                modal.classList.add('show');
+            }
+
+            hideModal() {
+                const modal = document.getElementById('cookie-modal');
+                modal.classList.remove('show');
+            }
+
+            acceptAll() {
+                const consent = {
+                    necessary: true,
+                    analytics: true,
+                    marketing: true,
+                    timestamp: new Date().toISOString()
+                };
+                this.setCookieConsent(consent);
+                this.hideBanner();
+                this.loadAnalytics();
+                this.loadMarketing();
+            }
+
+            rejectAll() {
+                const consent = {
+                    necessary: true,
+                    analytics: false,
+                    marketing: false,
+                    timestamp: new Date().toISOString()
+                };
+                this.setCookieConsent(consent);
+                this.hideBanner();
+            }
+
+            savePreferences() {
+                const analytics = document.getElementById('analytics-cookies').checked;
+                const marketing = document.getElementById('marketing-cookies').checked;
+                
+                const consent = {
+                    necessary: true,
+                    analytics: analytics,
+                    marketing: marketing,
+                    timestamp: new Date().toISOString()
+                };
+                
+                this.setCookieConsent(consent);
+                this.hideModal();
+                this.hideBanner();
+                
+                if (analytics) this.loadAnalytics();
+                if (marketing) this.loadMarketing();
+            }
+
+            loadAnalytics() {
+                // Google Analytics would be loaded here
+                console.log('Loading analytics cookies...');
+            }
+
+            loadMarketing() {
+                // Marketing cookies would be loaded here
+                console.log('Loading marketing cookies...');
+            }
+
+            setupEventListeners() {
+                document.getElementById('cookie-accept').addEventListener('click', () => this.acceptAll());
+                document.getElementById('cookie-reject').addEventListener('click', () => this.rejectAll());
+                document.getElementById('cookie-settings').addEventListener('click', () => this.showModal());
+                document.getElementById('close-modal').addEventListener('click', () => this.hideModal());
+                document.getElementById('save-preferences').addEventListener('click', () => this.savePreferences());
+                
+                // Close modal when clicking outside
+                document.getElementById('cookie-modal').addEventListener('click', (e) => {
+                    if (e.target.id === 'cookie-modal') {
+                        this.hideModal();
+                    }
+                });
+            }
+        }
+
+        // Initialize cookie manager when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            new CookieManager();
+        });
+
+        // FAQ Accordion functionality
+        function toggleFAQ(id) {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            // Toggle content visibility
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html> 

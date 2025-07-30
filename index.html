@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafera.one - Gestión de trámites vehiculares en CDMX</title>
+    <meta name="description" content="Realizamos por ti los trámites relacionados con tenencia y certificados para que no pierdas tiempo">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-heading">Trafera.one</h1>
+                        <p class="text-xs text-text">Servicios de gestión vehicular</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#servicios" class="text-text hover:text-primary transition-colors">Servicios</a>
+                    <a href="#como-funciona" class="text-text hover:text-primary transition-colors">Cómo funciona</a>
+                    <a href="contacto.html" class="text-text hover:text-primary transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2 bg-light-bg">
+                <a href="#servicios" class="block py-2 text-text hover:text-primary">Servicios</a>
+                <a href="#como-funciona" class="block py-2 text-text hover:text-primary">Cómo funciona</a>
+                <a href="contacto.html" class="block py-2 text-text hover:text-primary">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-light-bg to-white section-padding relative overflow-hidden">
+        <!-- Background elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 right-10 w-32 h-32 bg-primary rounded-full"></div>
+            <div class="absolute bottom-20 left-10 w-24 h-24 bg-secondary rounded-full"></div>
+            <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-primary rounded-full"></div>
+        </div>
+        
+        <div class="container-custom relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-heading mb-6">
+                        Gestión de trámites vehiculares en CDMX
+                    </h1>
+                    <p class="text-xl text-text mb-8 leading-relaxed">
+                        Realizamos por ti los trámites relacionados con tenencia y certificados para que no pierdas tiempo
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#servicios" class="btn-primary text-center">
+                            Iniciar gestión
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-primary rounded-full opacity-10 absolute -top-4 -right-4"></div>
+                        <div class="w-64 h-64 bg-secondary rounded-full opacity-20 absolute -bottom-4 -left-4"></div>
+                        <div class="relative z-10 bg-white p-8 rounded-2xl shadow-card">
+                            <svg class="w-32 h-32 text-primary mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                            </svg>
+                            <div class="text-center">
+                                <h3 class="text-lg font-semibold text-heading mb-2">Trámites Seguros</h3>
+                                <p class="text-sm text-text">Gestión oficial y confiable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section-padding bg-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                    ¿Qué trámites puedes hacer aquí?
+                </h2>
+                <p class="text-xl text-text max-w-3xl mx-auto">
+                    Te ayudamos con los trámites vehiculares más importantes en la Ciudad de México
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-light-bg rounded-2xl p-8 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-heading mb-4">
+                        Subsidio del 100% en Tenencia 2025
+                    </h3>
+                    <p class="text-text mb-6">
+                        Te ayudamos a solicitar el subsidio si tu auto cuesta menos de $250,000 y cumples los requisitos.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Verificamos si cumples los requisitos
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Preparamos y enviamos tu solicitud
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Recibes confirmación en PDF
+                        </li>
+                    </ul>
+                    <a href="subsidio-tenencia.html" class="btn-primary w-full text-center">
+                        Solicitar subsidio
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-light-bg rounded-2xl p-8 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 2a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H7a1 1 0 01-1-1V6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-heading mb-4">
+                        Certificado de no adeudo
+                    </h3>
+                    <p class="text-text mb-6">
+                        Obtenemos por ti la constancia oficial para que puedas vender tu auto sin problemas.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Revisamos si tienes adeudos
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Tramitamos el certificado por ti
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Te lo enviamos en PDF
+                        </li>
+                    </ul>
+                    <a href="certificado-no-adeudo.html" class="btn-primary w-full text-center">
+                        Solicitar certificado
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding bg-light-bg">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                    Testimonios de usuarios
+                </h2>
+                <p class="text-xl text-text max-w-3xl mx-auto">
+                    Lo que dicen nuestros clientes sobre nuestros servicios
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_1.webp" alt="Carlos M." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Carlos M.</h4>
+                            <p class="text-xs md:text-sm text-text">CDMX</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Extremadamente fácil y eficiente. No sabía cómo hacer el trámite de tenencia y me ahorraron mucho tiempo. Todo súper rápido!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_2.webp" alt="Ana R." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Ana R.</h4>
+                            <p class="text-xs md:text-sm text-text">Álvaro Obregón</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Tenía que vender mi carro urgentemente y necesitaba el certificado de no adeudo. Me lo enviaron en PDF al día siguiente. Muy agradecida!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_3.webp" alt="Roberto S." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Roberto S.</h4>
+                            <p class="text-xs md:text-sm text-text">Coyoacán</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Mi auto vale menos de 250 mil pesos y me ayudaron con el subsidio del 100%. Ya no pago tenencia! Definitivamente recomiendo esto a toda mi familia."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_4.webp" alt="María L." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">María L.</h4>
+                            <p class="text-xs md:text-sm text-text">Iztapalapa</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Estaba cansada de hacer filas en las oficinas del gobierno. Ahora todo por internet, mucho mejor. Tengo problemas para caminar y esto me salvó."
+                    </p>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_5.webp" alt="Sofia P." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Sofia P.</h4>
+                            <p class="text-xs md:text-sm text-text">Miguel Hidalgo</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Mi hermano me recomendó esta página. La verdad es que sí funciona, no es fake. Estoy muy feliz con el resultado."
+                    </p>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_6.webp" alt="Patricia G." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Patricia G.</h4>
+                            <p class="text-xs md:text-sm text-text">Benito Juárez</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Tenía dudas al principio pero me respondieron todas mis preguntas por WhatsApp. Carlos de Trafera me ayudó amablemente y me envió un correo tranquilizándome."
+                    </p>
+                </div>
+
+                <!-- Testimonial 7 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_7.webp" alt="Fernando H." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Fernando H.</h4>
+                            <p class="text-xs md:text-sm text-text">Venustiano Carranza</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Llevaba 3 años sin pagar tenencia y me ayudaron a regularizar todo. Excelente servicio, muy expedito y ahorrador de tiempo."
+                    </p>
+                </div>
+
+                <!-- Testimonial 8 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_8.webp" alt="Luis A." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Luis A.</h4>
+                            <p class="text-xs md:text-sm text-text">Cuauhtémoc</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Me cobraron menos que otros gestores y el trámite salió más rápido. 100% recomendado. Estoy loco por esto, ¡simplemente funciona!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 9 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_9.webp" alt="Diego V." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Diego V.</h4>
+                            <p class="text-xs md:text-sm text-text">Tlalpan</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Ya no tengo que madrugar para ir a las oficinas. Todo desde mi casa, súper práctico. En menos de 24 horas, con mínimo esfuerzo."
+                    </p>
+                </div>
+
+                <!-- Testimonial 10 -->
+                <div class="bg-white rounded-2xl p-4 md:p-6 shadow-card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden flex-shrink-0 mr-3">
+                            <img src="img/Testimonial/Testimonial_10.webp" alt="Roberto A." class="w-full h-full object-cover" width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <h4 class="font-semibold text-heading text-sm md:text-base truncate">Roberto A.</h4>
+                            <p class="text-xs md:text-sm text-text">Xochimilco</p>
+                        </div>
+                    </div>
+                    <p class="text-text italic text-sm md:text-base leading-relaxed">
+                        "Mi carro es del 2018 y me dijeron que no calificaba para el subsidio, pero ellos lo lograron. ¡Muchas gracias!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works Section -->
+    <section id="como-funciona" class="section-padding bg-light-bg">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                    Cómo funciona
+                </h2>
+                <p class="text-xl text-text max-w-3xl mx-auto">
+                    Proceso simple en 3 pasos
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Líneas conectoras mejoradas -->
+                <div class="hidden md:block absolute top-10 left-1/4 w-1/2 h-1 bg-primary opacity-40 rounded-full"></div>
+                <div class="hidden md:block absolute top-10 right-1/4 w-1/2 h-1 bg-primary opacity-40 rounded-full"></div>
+                
+                <!-- Flechas mejoradas -->
+                <div class="hidden md:block absolute top-6 left-1/2 transform -translate-x-1/2">
+                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md">
+                        <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hidden md:block absolute top-6 right-1/2 transform translate-x-1/2">
+                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md">
+                        <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="text-center relative z-10">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-primary">
+                        <img src="img/icon-step1.webp" alt="Checklist" class="w-10 h-10" width="40" height="40">
+                    </div>
+                    <h3 class="text-xl font-bold text-heading mb-4">1. Seleccionas el trámite</h3>
+                    <p class="text-text">
+                        Elige entre subsidio de tenencia o certificado de no adeudo según tus necesidades.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center relative z-10">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-primary">
+                        <img src="img/icon-step2.webp" alt="Documento con pluma" class="w-10 h-10" width="40" height="40">
+                    </div>
+                    <h3 class="text-xl font-bold text-heading mb-4">2. Llenas tus datos</h3>
+                    <p class="text-text">
+                        Proporciona la información necesaria de forma segura y confidencial.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center relative z-10">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-primary">
+                        <img src="img/icon-step3.webp" alt="Documento con check" class="w-10 h-10" width="40" height="40">
+                    </div>
+                    <h3 class="text-xl font-bold text-heading mb-4">3. Nosotros lo realizamos</h3>
+                    <p class="text-text">
+                        Realizamos el trámite por ti y te enviamos el resultado en PDF.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light-bg relative overflow-hidden">
+        <!-- Background illustration -->
+        <div class="hidden lg:block absolute top-0 right-0 w-64 h-64 opacity-10">
+            <svg class="w-full h-full text-primary" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+            </svg>
+        </div>
+        
+        <div class="container-custom relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                    Preguntas frecuentes
+                </h2>
+                <p class="text-xl text-text max-w-3xl mx-auto">
+                    Resolvemos tus dudas más comunes
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-gradient-to-r from-white to-green-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(1)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿Cuánto cuesta el trámite?
+                                    <svg id="icon-1" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-1" class="text-text" style="display: none;">
+                                Los costos varían según el tipo de trámite. Te proporcionamos un presupuesto transparente antes de comenzar.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gradient-to-r from-white to-blue-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(2)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿En cuánto tiempo recibo el resultado?
+                                    <svg id="icon-2" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-2" class="text-text" style="display: none;">
+                                Los tiempos varían entre 24-72 horas dependiendo del trámite y la complejidad del caso.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gradient-to-r from-white to-yellow-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(3)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿Qué pasa si tengo adeudos?
+                                    <svg id="icon-3" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-3" class="text-text" style="display: none;">
+                                Te ayudamos a regularizar tu situación antes de proceder con el trámite solicitado.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gradient-to-r from-white to-purple-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(4)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿Es oficial?
+                                    <svg id="icon-4" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-4" class="text-text" style="display: none;">
+                                Somos un servicio privado que facilita trámites oficiales. No somos una entidad gubernamental.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-gradient-to-r from-white to-red-50 rounded-2xl p-6 shadow-card border-l-4 border-primary hover:shadow-lg transition-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full text-left" onclick="toggleFAQ(5)">
+                                <h3 class="text-lg font-semibold text-heading mb-3 flex items-center justify-between">
+                                    ¿Necesito firmar algo?
+                                    <svg id="icon-5" class="w-5 h-5 text-primary transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </h3>
+                            </button>
+                            <div id="content-5" class="text-text" style="display: none;">
+                                Solo necesitas proporcionar autorización digital. No es necesario firmar documentos físicos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="section-padding bg-light-bg relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-20"></div>
+        
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                    Seguridad y confianza
+                </h2>
+                <p class="text-xl text-text max-w-3xl mx-auto">
+                    Tu información está segura con nosotros
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Block 1 -->
+                <div class="text-center bg-white rounded-2xl p-6 shadow-card hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 security-block">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-heading mb-4">Trámites realizados por gestores especializados</h3>
+                    <p class="text-text mb-4">
+                        Contamos con profesionales certificados con años de experiencia en trámites vehiculares.
+                    </p>
+                    <div class="text-sm text-primary font-medium">
+                        +1500 trámites realizados con éxito en CDMX
+                    </div>
+                </div>
+
+                <!-- Block 2 -->
+                <div class="text-center bg-white rounded-2xl p-6 shadow-card hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 security-block">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-heading mb-4">Tus datos están protegidos</h3>
+                    <p class="text-text mb-4">
+                        Utilizamos tu información únicamente para realizar el trámite solicitado, con total confidencialidad.
+                    </p>
+                    <div class="text-sm text-primary font-medium">
+                        Protección SSL de 256 bits
+                    </div>
+                </div>
+
+                <!-- Block 3 -->
+                <div class="text-center bg-white rounded-2xl p-6 shadow-card hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 security-block">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-heading mb-4">Entregamos documentos oficiales</h3>
+                    <p class="text-text mb-4">
+                        Recibirás tu comprobante en PDF firmado y con validez ante la autoridad correspondiente.
+                    </p>
+                    <div class="text-sm text-primary font-medium">
+                        Documentos con validez oficial
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust indicators -->
+            <div class="mt-12 text-center">
+                <div class="bg-white rounded-2xl p-6 shadow-card max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">4.9/5</div>
+                            <div class="text-sm text-text">Calificación por más de 1,000 usuarios</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">24h</div>
+                            <div class="text-sm text-text">Tiempo promedio de respuesta</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">100%</div>
+                            <div class="text-sm text-text">Atención personalizada por WhatsApp o email</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section-padding bg-light-bg">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-heading mb-4">
+                    ¿Necesitas ayuda?
+                </h2>
+                <p class="text-lg md:text-xl text-text max-w-2xl mx-auto">
+                    Nuestro equipo está listo para ayudarte
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-xl p-6 md:p-8 shadow-card border border-gray-200">
+                    <h3 class="text-lg md:text-xl font-bold text-heading mb-8 text-center">
+                        Contacto directo
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <a href="mailto:contacto@trafera.one" class="text-center p-6 rounded-lg hover:bg-light-bg transition-all duration-300 group border border-transparent hover:border-primary/20">
+                            <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-lg text-heading group-hover:text-primary transition-colors mb-2">Email</p>
+                                <p class="text-sm text-text">contacto@trafera.one</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://wa.me/525512345678" target="_blank" class="text-center p-6 rounded-lg hover:bg-light-bg transition-all duration-300 group border border-transparent hover:border-primary/20">
+                            <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-lg text-heading group-hover:text-primary transition-colors mb-2">WhatsApp</p>
+                                <p class="text-sm text-text">+52 55 3955 6102</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-primary">
+        <div class="container-custom text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+                Evita filas y trámites complejos. Nosotros lo hacemos por ti.
+            </h2>
+            <p class="text-xl mb-8 text-white opacity-90">
+                Ahorra tiempo y evita la burocracia. Nuestros expertos se encargan de todo.
+            </p>
+            <a href="#servicios" class="btn-secondary text-center inline-block">
+                Iniciar gestión
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-heading text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold">Trafera.one</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Servicios de gestión vehicular en la Ciudad de México. 
+                        <strong>No somos un sitio oficial del gobierno.</strong>
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Ciudad de México</p>
+                        <p>contacto@trafera.one</p>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Información Legal</h4>
+                    <div class="space-y-2">
+                        <a href="politica-privacidad.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de privacidad
+                        </a>
+                        <a href="aviso-legal.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Aviso legal
+                        </a>
+                        <a href="terminos-condiciones.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Términos y condiciones
+                        </a>
+                        <a href="politica-cookies.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Trafera.one. Todos los derechos reservados.</p>
+                <p class="text-sm mt-2">
+                    <strong>Importante:</strong> Este sitio no es oficial del gobierno de la Ciudad de México.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+    </body>
+    
+    <script>
+        // FAQ Accordion functionality
+        function toggleFAQ(id) {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            // Toggle content visibility
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        // Scroll animation functionality
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animate-fade-in');
+                }
+            });
+        }
+        
+        // Initialize FAQ and scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // All FAQ items start closed
+            console.log('FAQ accordion initialized - all items closed by default');
+            
+            // Add scroll animation classes
+            const securityBlocks = document.querySelectorAll('.security-block');
+            securityBlocks.forEach((block, index) => {
+                block.classList.add('animate-on-scroll');
+                block.style.animationDelay = `${index * 0.2}s`;
+            });
+            
+            // Initial check for elements in view
+            animateOnScroll();
+            
+            // Listen for scroll events
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
+    
+    <style>
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .animate-fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .security-block {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .security-block.animate-fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Cookie Banner Styles */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        .cookie-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .cookie-modal.show {
+            display: flex;
+        }
+
+        .cookie-modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cookie-category {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cookie-category.required {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2E7D32;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+        input:disabled + .slider {
+            background-color: #2E7D32;
+            cursor: not-allowed;
+        }
+    </style>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container-custom py-4">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-heading mb-2">🍪 <strong>Usamos cookies</strong></h3>
+                    <p class="text-sm text-text mb-4">
+                        Utilizamos cookies propias y de terceros para garantizar el funcionamiento del sitio web, personalizar el contenido, ofrecer funciones de redes sociales y analizar el tráfico. También compartimos información sobre el uso que haga del sitio con nuestros socios de análisis y publicidad, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
+                    </p>
+                    <p class="text-sm text-text mb-4">
+                        Puedes aceptar todas las cookies, rechazarlas, o configurar cuáles deseas permitir. Puedes cambiar tu configuración en cualquier momento.
+                    </p>
+                    <p class="text-sm text-text mb-4">
+                        Consulta nuestra <a href="politica-cookies.html" class="text-primary hover:underline">Política de cookies</a> para más información.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <button id="cookie-reject" class="px-4 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        Rechazar
+                    </button>
+                    <button id="cookie-settings" class="px-4 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        Configurar
+                    </button>
+                    <button id="cookie-accept" class="px-4 py-2 text-sm bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+                        Aceptar todas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="cookie-modal-content p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-heading">Configuración de cookies</h2>
+                <button id="close-modal" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-4 mb-6">
+                <div class="cookie-category required">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">🍪 Cookies necesarias</h3>
+                            <p class="text-sm text-text mb-2">
+                                Requeridas para el funcionamiento básico del sitio. No pueden ser desactivadas.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• session_id: Mantiene tu sesión activa</li>
+                                <li>• csrf_token: Protección de seguridad</li>
+                                <li>• language: Tu idioma preferido</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" checked disabled>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">📊 Cookies de análisis</h3>
+                            <p class="text-sm text-text mb-2">
+                                Nos ayudan a entender cómo utilizas nuestro sitio para mejorarlo.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• Google Analytics: Análisis de tráfico</li>
+                                <li>• _gat: Control de frecuencia</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" id="analytics-cookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">🎯 Cookies de marketing</h3>
+                            <p class="text-sm text-text mb-2">
+                                Utilizadas para mostrar publicidad relevante y medir campañas.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• Meta Pixel: Seguimiento de conversiones</li>
+                                <li>• Google Ads: Optimización publicitaria</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" id="marketing-cookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 justify-end">
+                <button id="save-preferences" class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+                    Guardar preferencias
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie management
+        class CookieManager {
+            constructor() {
+                this.cookieConsent = this.getCookieConsent();
+                this.init();
+            }
+
+            init() {
+                if (!this.cookieConsent) {
+                    this.showBanner();
+                }
+                this.setupEventListeners();
+            }
+
+            getCookieConsent() {
+                return localStorage.getItem('cookieConsent');
+            }
+
+            setCookieConsent(consent) {
+                localStorage.setItem('cookieConsent', JSON.stringify(consent));
+            }
+
+            showBanner() {
+                const banner = document.getElementById('cookie-banner');
+                setTimeout(() => {
+                    banner.classList.add('show');
+                }, 1000);
+            }
+
+            hideBanner() {
+                const banner = document.getElementById('cookie-banner');
+                banner.classList.remove('show');
+            }
+
+            showModal() {
+                const modal = document.getElementById('cookie-modal');
+                modal.classList.add('show');
+            }
+
+            hideModal() {
+                const modal = document.getElementById('cookie-modal');
+                modal.classList.remove('show');
+            }
+
+            acceptAll() {
+                const consent = {
+                    necessary: true,
+                    analytics: true,
+                    marketing: true,
+                    timestamp: new Date().toISOString()
+                };
+                this.setCookieConsent(consent);
+                this.hideBanner();
+                this.loadAnalytics();
+                this.loadMarketing();
+            }
+
+            rejectAll() {
+                const consent = {
+                    necessary: true,
+                    analytics: false,
+                    marketing: false,
+                    timestamp: new Date().toISOString()
+                };
+                this.setCookieConsent(consent);
+                this.hideBanner();
+            }
+
+            savePreferences() {
+                const analytics = document.getElementById('analytics-cookies').checked;
+                const marketing = document.getElementById('marketing-cookies').checked;
+                
+                const consent = {
+                    necessary: true,
+                    analytics: analytics,
+                    marketing: marketing,
+                    timestamp: new Date().toISOString()
+                };
+                
+                this.setCookieConsent(consent);
+                this.hideModal();
+                this.hideBanner();
+                
+                if (analytics) this.loadAnalytics();
+                if (marketing) this.loadMarketing();
+            }
+
+            loadAnalytics() {
+                // Google Analytics would be loaded here
+                console.log('Loading analytics cookies...');
+            }
+
+            loadMarketing() {
+                // Marketing cookies would be loaded here
+                console.log('Loading marketing cookies...');
+            }
+
+            setupEventListeners() {
+                document.getElementById('cookie-accept').addEventListener('click', () => this.acceptAll());
+                document.getElementById('cookie-reject').addEventListener('click', () => this.rejectAll());
+                document.getElementById('cookie-settings').addEventListener('click', () => this.showModal());
+                document.getElementById('close-modal').addEventListener('click', () => this.hideModal());
+                document.getElementById('save-preferences').addEventListener('click', () => this.savePreferences());
+                
+                // Close modal when clicking outside
+                document.getElementById('cookie-modal').addEventListener('click', (e) => {
+                    if (e.target.id === 'cookie-modal') {
+                        this.hideModal();
+                    }
+                });
+            }
+        }
+
+        // Initialize cookie manager when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            new CookieManager();
+        });
+    </script>
+</html> 

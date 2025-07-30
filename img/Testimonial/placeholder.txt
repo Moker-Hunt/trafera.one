@@ -1,0 +1,16 @@
+Изображения для отзывов должны быть размещены в этой папке:
+
+testimonial-1.jpg - Ana M. (женщина)
+testimonial-2.jpg - Carlos R. (мужчина) 
+testimonial-3.jpg - María S. (женщина)
+testimonial-4.jpg - Roberto M. (мужчина)
+testimonial-5.jpg - Sofia L. (женщина)
+testimonial-6.jpg - Diego P. (мужчина)
+testimonial-7.jpg - Patricia G. (женщина)
+testimonial-8.jpg - Fernando H. (мужчина)
+testimonial-9.jpg - Carmen V. (женщина)
+testimonial-10.jpg - Luis A. (мужчина)
+
+Рекомендуемые размеры: 112x112px (для 2x ретина дисплеев)
+Формат: JPG
+Стиль: профессиональные портреты, круглые аватары 

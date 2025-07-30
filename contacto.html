@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Trafera.one</title>
+    <meta name="description" content="Contacta con nuestro equipo para obtener ayuda con tus trámites vehiculares en CDMX">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-heading">Trafera.one</h1>
+                            <p class="text-xs text-text">Servicios de gestión vehicular</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Inicio</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2 bg-light-bg">
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-light-bg py-4">
+        <div class="container-custom">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="index.html" class="inline-flex items-center text-sm font-medium text-text hover:text-primary">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                            </svg>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-text" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="ml-1 text-sm font-medium text-text md:ml-2">Contacto</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="section-padding">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h1 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                        Contacto
+                    </h1>
+                    <p class="text-xl text-text max-w-2xl mx-auto">
+                        Nuestro equipo está listo para ayudarte con tus trámites vehiculares
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Contact Information -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <h2 class="text-2xl font-bold text-heading mb-6">Información de Contacto</h2>
+                        
+                        <div class="space-y-6">
+                            <!-- Email -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-heading mb-2">Email</h3>
+                                    <p class="text-text mb-2">contacto@trafera.one</p>
+                                    <p class="text-sm text-text">Respuesta en 24-48 horas hábiles</p>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-heading mb-2">WhatsApp</h3>
+                                    <p class="text-text mb-2">+52 55 3955 6102</p>
+                                    <p class="text-sm text-text">Respuesta inmediata durante horario laboral</p>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-heading mb-2">Ubicación</h3>
+                                    <p class="text-text mb-2">Ciudad de México, México</p>
+                                    <p class="text-sm text-text">Servicios en toda la CDMX</p>
+                                </div>
+                            </div>
+
+                            <!-- Schedule -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-heading mb-2">Horario de Atención</h3>
+                                    <p class="text-text mb-2">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-sm text-text">Sábados: 9:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <h2 class="text-2xl font-bold text-heading mb-6">Envíanos un Mensaje</h2>
+                        
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="nombre" class="block text-sm font-medium text-heading mb-2">Nombre completo *</label>
+                                    <input type="text" id="nombre" name="nombre" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-heading mb-2">Email *</label>
+                                    <input type="email" id="email" name="email" required 
+                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="telefono" class="block text-sm font-medium text-heading mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+
+                            <div>
+                                <label for="servicio" class="block text-sm font-medium text-heading mb-2">Servicio de interés *</label>
+                                <select id="servicio" name="servicio" required 
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="subsidio">Subsidio del 100% en Tenencia 2025</option>
+                                    <option value="certificado">Certificado de no adeudo</option>
+                                    <option value="otros">Otros trámites</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="mensaje" class="block text-sm font-medium text-heading mb-2">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required 
+                                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                                          placeholder="Cuéntanos sobre tu trámite y cómo podemos ayudarte..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full btn-primary">
+                                Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="mt-16">
+                    <h2 class="text-2xl font-bold text-heading mb-8 text-center">Preguntas Frecuentes</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-light-bg rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-heading mb-3">¿En cuánto tiempo responden?</h3>
+                            <p class="text-text">Respondemos a todos los mensajes en un plazo de 24-48 horas hábiles. Para consultas urgentes, recomendamos usar WhatsApp.</p>
+                        </div>
+
+                        <div class="bg-light-bg rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-heading mb-3">¿Puedo solicitar un presupuesto?</h3>
+                            <p class="text-text">Sí, puedes solicitar un presupuesto gratuito enviándonos los detalles de tu trámite por email o WhatsApp.</p>
+                        </div>
+
+                        <div class="bg-light-bg rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-heading mb-3">¿Atienden en fines de semana?</h3>
+                            <p class="text-text">Atendemos consultas por WhatsApp los sábados de 9:00 AM a 2:00 PM. Los domingos no hay atención.</p>
+                        </div>
+
+                        <div class="bg-light-bg rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-heading mb-3">¿Qué información necesito proporcionar?</h3>
+                            <p class="text-text">Para un presupuesto preciso, necesitamos información básica del vehículo y el tipo de trámite que deseas realizar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-heading text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold">Trafera.one</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Servicios de gestión vehicular en la Ciudad de México. 
+                        <strong>No somos un sitio oficial del gobierno.</strong>
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Ciudad de México</p>
+                        <p>contacto@trafera.one</p>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Información Legal</h4>
+                    <div class="space-y-2">
+                        <a href="politica-privacidad.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de privacidad
+                        </a>
+                        <a href="aviso-legal.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Aviso legal
+                        </a>
+                        <a href="terminos-condiciones.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Términos y condiciones
+                        </a>
+                        <a href="politica-cookies.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Trafera.one. Todos los derechos reservados.</p>
+                <p class="text-sm mt-2">
+                    <strong>Importante:</strong> Este sitio no es oficial del gobierno de la Ciudad de México.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container-custom py-4">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-heading mb-2">🍪 <strong>Usamos cookies</strong></h3>
+                    <p class="text-sm text-text mb-4">
+                        Utilizamos cookies propias y de terceros para garantizar el funcionamiento del sitio web, personalizar el contenido, ofrecer funciones de redes sociales y analizar el tráfico. También compartimos información sobre el uso que haga del sitio con nuestros socios de análisis y publicidad, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
+                    </p>
+                    <p class="text-sm text-text mb-4">
+                        Puedes aceptar todas las cookies, rechazarlas, o configurar cuáles deseas permitir. Puedes cambiar tu configuración en cualquier momento.
+                    </p>
+                    <p class="text-sm text-text mb-4">
+                        Consulta nuestra <a href="politica-cookies.html" class="text-primary hover:underline">Política de cookies</a> para más información.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <button id="cookie-reject" class="px-4 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        Rechazar
+                    </button>
+                    <button id="cookie-settings" class="px-4 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        Configurar
+                    </button>
+                    <button id="cookie-accept" class="px-4 py-2 text-sm bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+                        Aceptar todas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="cookie-modal-content p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-heading">Configuración de cookies</h2>
+                <button id="close-modal" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-4 mb-6">
+                <div class="cookie-category required">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">🍪 Cookies necesarias</h3>
+                            <p class="text-sm text-text mb-2">
+                                Requeridas para el funcionamiento básico del sitio. No pueden ser desactivadas.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• session_id: Mantiene tu sesión activa</li>
+                                <li>• csrf_token: Protección de seguridad</li>
+                                <li>• language: Tu idioma preferido</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" checked disabled>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">📊 Cookies de análisis</h3>
+                            <p class="text-sm text-text mb-2">
+                                Nos ayudan a entender cómo utilizas nuestro sitio para mejorarlo.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• Google Analytics: Análisis de tráfico</li>
+                                <li>• _gat: Control de frecuencia</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" id="analytics-cookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">🎯 Cookies de marketing</h3>
+                            <p class="text-sm text-text mb-2">
+                                Utilizadas para mostrar publicidad relevante y medir campañas.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• Meta Pixel: Seguimiento de conversiones</li>
+                                <li>• Google Ads: Optimización publicitaria</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" id="marketing-cookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 justify-end">
+                <button id="save-preferences" class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+                    Guardar preferencias
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Cookie Banner Styles */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        .cookie-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .cookie-modal.show {
+            display: flex;
+        }
+
+        .cookie-modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cookie-category {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cookie-category.required {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2E7D32;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+        input:disabled + .slider {
+            background-color: #2E7D32;
+            cursor: not-allowed;
+        }
+    </style>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Cookie management
+        class CookieManager {
+            constructor() {
+                this.cookieConsent = this.getCookieConsent();
+                this.init();
+            }
+
+            init() {
+                if (!this.cookieConsent) {
+                    this.showBanner();
+                }
+                this.setupEventListeners();
+            }
+
+            getCookieConsent() {
+                return localStorage.getItem('cookieConsent');
+            }
+
+            setCookieConsent(consent) {
+                localStorage.setItem('cookieConsent', JSON.stringify(consent));
+            }
+
+            showBanner() {
+                const banner = document.getElementById('cookie-banner');
+                setTimeout(() => {
+                    banner.classList.add('show');
+                }, 1000);
+            }
+
+            hideBanner() {
+                const banner = document.getElementById('cookie-banner');
+                banner.classList.remove('show');
+            }
+
+            showModal() {
+                const modal = document.getElementById('cookie-modal');
+                modal.classList.add('show');
+            }
+
+            hideModal() {
+                const modal = document.getElementById('cookie-modal');
+                modal.classList.remove('show');
+            }
+
+            acceptAll() {
+                const consent = {
+                    necessary: true,
+                    analytics: true,
+                    marketing: true,
+                    timestamp: new Date().toISOString()
+                };
+                this.setCookieConsent(consent);
+                this.hideBanner();
+                this.loadAnalytics();
+                this.loadMarketing();
+            }
+
+            rejectAll() {
+                const consent = {
+                    necessary: true,
+                    analytics: false,
+                    marketing: false,
+                    timestamp: new Date().toISOString()
+                };
+                this.setCookieConsent(consent);
+                this.hideBanner();
+            }
+
+            savePreferences() {
+                const analytics = document.getElementById('analytics-cookies').checked;
+                const marketing = document.getElementById('marketing-cookies').checked;
+                
+                const consent = {
+                    necessary: true,
+                    analytics: analytics,
+                    marketing: marketing,
+                    timestamp: new Date().toISOString()
+                };
+                
+                this.setCookieConsent(consent);
+                this.hideModal();
+                this.hideBanner();
+                
+                if (analytics) this.loadAnalytics();
+                if (marketing) this.loadMarketing();
+            }
+
+            loadAnalytics() {
+                // Google Analytics would be loaded here
+                console.log('Loading analytics cookies...');
+            }
+
+            loadMarketing() {
+                // Marketing cookies would be loaded here
+                console.log('Loading marketing cookies...');
+            }
+
+            setupEventListeners() {
+                document.getElementById('cookie-accept').addEventListener('click', () => this.acceptAll());
+                document.getElementById('cookie-reject').addEventListener('click', () => this.rejectAll());
+                document.getElementById('cookie-settings').addEventListener('click', () => this.showModal());
+                document.getElementById('close-modal').addEventListener('click', () => this.hideModal());
+                document.getElementById('save-preferences').addEventListener('click', () => this.savePreferences());
+                
+                // Close modal when clicking outside
+                document.getElementById('cookie-modal').addEventListener('click', (e) => {
+                    if (e.target.id === 'cookie-modal') {
+                        this.hideModal();
+                    }
+                });
+            }
+        }
+
+        // Initialize cookie manager when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            new CookieManager();
+        });
+    </script>
+</body>
+</html> 
