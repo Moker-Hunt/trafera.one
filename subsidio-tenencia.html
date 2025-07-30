@@ -9,7 +9,6 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 <body class="font-sans">
-    <!-- Header -->
     <header class="bg-white shadow-sm border-b border-gray-100">
         <div class="container-custom">
             <div class="flex items-center justify-between py-4">
@@ -29,8 +28,28 @@
 
                 <!-- Navigation -->
                 <nav class="hidden md:flex items-center space-x-6">
-                    <a href="index.html#servicios" class="text-text hover:text-primary transition-colors">Servicios</a>
-                    <a href="index.html#como-funciona" class="text-text hover:text-primary transition-colors">Cómo funciona</a>
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Inicio</a>
+                    <a href="sobre-nosotros.html" class="text-text hover:text-primary transition-colors">Sobre Nosotros</a>
+                    
+                    <!-- Legal Dropdown -->
+                    <div class="relative group">
+                        <button class="text-text hover:text-primary transition-colors flex items-center">
+                            Legal
+                            <svg class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="politica-privacidad.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Privacidad</a>
+                                <a href="politica-reembolso.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Reembolso</a>
+                                <a href="terminos-condiciones.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Términos y Condiciones</a>
+                                <a href="aviso-legal.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Aviso Legal</a>
+                                <a href="politica-cookies.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Cookies</a>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <a href="contacto.html" class="text-text hover:text-primary transition-colors">Contacto</a>
                 </nav>
 
@@ -46,8 +65,19 @@
         <!-- Mobile menu -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-4 py-2 space-y-2 bg-light-bg">
-                <a href="index.html#servicios" class="block py-2 text-text hover:text-primary">Servicios</a>
-                <a href="index.html#como-funciona" class="block py-2 text-text hover:text-primary">Cómo funciona</a>
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Inicio</a>
+                <a href="sobre-nosotros.html" class="block py-2 text-text hover:text-primary">Sobre Nosotros</a>
+                
+                <!-- Legal Section -->
+                <div class="border-t border-gray-200 pt-2 mt-2">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2 px-2">Legal</div>
+                    <a href="politica-privacidad.html" class="block py-2 px-2 text-text hover:text-primary">Política de Privacidad</a>
+                    <a href="politica-reembolso.html" class="block py-2 px-2 text-text hover:text-primary">Política de Reembolso</a>
+                    <a href="terminos-condiciones.html" class="block py-2 px-2 text-text hover:text-primary">Términos y Condiciones</a>
+                    <a href="aviso-legal.html" class="block py-2 px-2 text-text hover:text-primary">Aviso Legal</a>
+                    <a href="politica-cookies.html" class="block py-2 px-2 text-text hover:text-primary">Política de Cookies</a>
+                </div>
+                
                 <a href="contacto.html" class="block py-2 text-text hover:text-primary">Contacto</a>
             </div>
         </div>
@@ -66,18 +96,135 @@
                                Muchos vehículos en CDMX pueden quedar exentos de pagar la Tenencia si cumplen ciertos requisitos.
                            </p>
                            <p class="text-lg text-text leading-relaxed mt-4">
-                               Nosotros te ayudamos a revisar si aplicas y a gestionar la solicitud correctamente desde el portal oficial.
+                                Somos un servicio privado diseñado para ayudarte a gestionar trámites en portales oficiales de manera más sencilla, rápida y sin complicaciones. No somos una entidad gubernamental ni estamos afiliados a ninguna institución pública.
                            </p>
                            <p class="text-lg text-text leading-relaxed mt-4">
-                               <strong>No somos una entidad gubernamental</strong>, pero realizamos el proceso por ti.
+                                Trabajamos como intermediarios digitales: recopilamos la información necesaria, completamos formularios oficiales en tu nombre y te enviamos el resultado directamente a tu correo electrónico o WhatsApp. Toda la información que nos proporciones se usa exclusivamente para asistirte en el proceso.
                            </p>
+                           <p class="text-lg text-text leading-relaxed mt-4">
+                                Este sitio está pensado para personas que no tienen tiempo, acceso o conocimiento técnico para realizar ciertos trámites por su cuenta. Nuestro objetivo es facilitar el acceso a servicios públicos, sin sustituir ni suplantar a las autoridades oficiales.</p>
                            <div class="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg inline-block">
                                <p class="text-sm text-yellow-800 font-medium">
-                                   🏛️ Servicio independiente — no afiliado al gobierno
+                                   🏛️ No emitimos certificados ni documentos oficiales por cuenta propia. Todas las gestiones se realizan a través de los canales institucionales correspondientes.
                                </p>
                            </div>
                        </div>
                    </div>
+
+            <!-- Pricing Section -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <div class="bg-gradient-to-br from-white to-blue-50 rounded-3xl shadow-2xl p-10 border border-blue-100">
+                    <div class="text-center mb-10">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-4xl font-bold text-heading mb-4">Nuestro Servicio</h2>
+                        <p class="text-xl text-text max-w-2xl mx-auto">Tarifa transparente por nuestra gestión profesional</p>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12 items-start">
+                        <!-- Price Card -->
+                        <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                            <div class="text-center mb-8">
+                                <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary to-blue-600 rounded-full mb-6">
+                                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                    </svg>
+                                </div>
+                                <div class="text-5xl font-bold text-primary mb-2">$149</div>
+                                <div class="text-2xl font-semibold text-gray-600 mb-1">MXN</div>
+                                <div class="text-lg text-text mb-6">Tarifa única por nuestro servicio</div>
+                                
+                                <div class="space-y-4 text-base">
+                                    <div class="flex items-center p-3 bg-green-50 rounded-lg border border-green-200">
+                                        <svg class="w-6 h-6 text-green-600 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span class="font-medium text-green-800">Revisión de elegibilidad</span>
+                                    </div>
+                                    <div class="flex items-center p-3 bg-green-50 rounded-lg border border-green-200">
+                                        <svg class="w-6 h-6 text-green-600 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span class="font-medium text-green-800">Gestión completa del trámite</span>
+                                    </div>
+                                    <div class="flex items-center p-3 bg-green-50 rounded-lg border border-green-200">
+                                        <svg class="w-6 h-6 text-green-600 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span class="font-medium text-green-800">Seguimiento del proceso</span>
+                                    </div>
+                                    <div class="flex items-center p-3 bg-green-50 rounded-lg border border-green-200">
+                                        <svg class="w-6 h-6 text-green-600 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span class="font-medium text-green-800">Confirmación en PDF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Services Card -->
+                        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-heading">¿Qué incluye nuestra tarifa?</h3>
+                            </div>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start p-4 bg-white rounded-xl shadow-sm border border-blue-100">
+                                    <div class="w-3 h-3 bg-primary rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                    <div>
+                                        <p class="font-semibold text-heading mb-1">Gestión profesional</p>
+                                        <p class="text-sm text-text">Nuestro servicio de gestión profesional</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start p-4 bg-white rounded-xl shadow-sm border border-blue-100">
+                                    <div class="w-3 h-3 bg-primary rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                    <div>
+                                        <p class="font-semibold text-heading mb-1">Revisión de documentación</p>
+                                        <p class="text-sm text-text">Revisión de documentación y requisitos</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start p-4 bg-white rounded-xl shadow-sm border border-blue-100">
+                                    <div class="w-3 h-3 bg-primary rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                    <div>
+                                        <p class="font-semibold text-heading mb-1">Presentación oficial</p>
+                                        <p class="text-sm text-text">Presentación de la solicitud oficial</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start p-4 bg-white rounded-xl shadow-sm border border-blue-100">
+                                    <div class="w-3 h-3 bg-primary rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                    <div>
+                                        <p class="font-semibold text-heading mb-1">Seguimiento completo</p>
+                                        <p class="text-sm text-text">Seguimiento y comunicación con autoridades</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-6 text-white">
+                                <div class="flex items-start">
+                                    <svg class="w-6 h-6 text-blue-200 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2">Importante:</h4>
+                                        <p class="text-blue-100 leading-relaxed">
+                                            Nuestra tarifa es únicamente por nuestro servicio. Cualquier impuesto, tasa o cargo adicional que pueda surgir durante el proceso es independiente de nosotros y corresponde a las autoridades correspondientes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Form Section -->
             <div class="max-w-2xl mx-auto">
@@ -94,15 +241,6 @@
                                 <input type="text" id="fullName" name="fullName" required
                                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                                     placeholder="Ingresa tu nombre completo">
-                            </div>
-
-                            <div>
-                                <label for="curp" class="block text-sm font-medium text-heading mb-2">
-                                    CURP <span class="text-red-500">*</span>
-                                </label>
-                                <input type="text" id="curp" name="curp" required
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                                    placeholder="Ingresa tu CURP">
                             </div>
 
                             <div class="grid md:grid-cols-2 gap-4">
@@ -138,14 +276,6 @@
                                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                                         placeholder="ABC-1234">
                                 </div>
-                                <div>
-                                    <label for="vin" class="block text-sm font-medium text-heading mb-2">
-                                        Número de serie (VIN) <span class="text-red-500">*</span>
-                                    </label>
-                                    <input type="text" id="vin" name="vin" required
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
-                                        placeholder="17 caracteres">
-                                </div>
                             </div>
 
                             <div>
@@ -165,49 +295,6 @@
                                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                                     placeholder="250000">
                                 <p class="text-xs text-gray-500 mt-1">Ingresa el valor en pesos mexicanos</p>
-                            </div>
-                        </div>
-
-                        <!-- Document Upload -->
-                        <div class="space-y-4">
-                            <h3 class="text-xl font-semibold text-heading mb-4">Documentación Requerida</h3>
-                            
-                            <div>
-                                <label for="verification" class="block text-sm font-medium text-heading mb-2">
-                                    Verificación vehicular vigente <span class="text-red-500">*</span>
-                                </label>
-                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-primary transition-colors">
-                                    <input type="file" id="verification" name="verification" accept=".pdf,.jpg,.jpeg,.png" required
-                                        class="hidden">
-                                    <label for="verification" class="cursor-pointer">
-                                        <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-                                        </svg>
-                                        <p class="text-sm text-text">
-                                            <span class="text-primary font-medium">Haz clic para subir</span> o arrastra el archivo aquí
-                                        </p>
-                                        <p class="text-xs text-gray-500 mt-2">PDF, JPG, JPEG, PNG (máx. 10MB)</p>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="refrendo" class="block text-sm font-medium text-heading mb-2">
-                                    Comprobante de refrendo pagado <span class="text-red-500">*</span>
-                                </label>
-                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-primary transition-colors">
-                                    <input type="file" id="refrendo" name="refrendo" accept=".pdf,.jpg,.jpeg,.png" required
-                                        class="hidden">
-                                    <label for="refrendo" class="cursor-pointer">
-                                        <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-                                        </svg>
-                                        <p class="text-sm text-text">
-                                            <span class="text-primary font-medium">Haz clic para subir</span> o arrastra el archivo aquí
-                                        </p>
-                                        <p class="text-xs text-gray-500 mt-2">PDF, JPG, JPEG, PNG (máx. 10MB)</p>
-                                    </label>
-                                </div>
                             </div>
                         </div>
 
@@ -246,6 +333,26 @@
                             </p>
                         </div>
                     </form>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="success-message" class="hidden">
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+                            <div class="flex items-center justify-center mb-4">
+                                <svg class="w-12 h-12 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-green-800 mb-2">
+                                ¡Solicitud enviada con éxito!
+                            </h3>
+                            <p class="text-green-700 mb-4">
+                                Nos pondremos en contacto contigo para aclarar información y ofrecerte opciones de ayuda según tu situación.
+                            </p>
+                            <p class="text-sm text-green-600">
+                                Revisa tu correo electrónico para más detalles.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -433,7 +540,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-heading text-white section-padding">
         <div class="container-custom">
             <div class="grid md:grid-cols-4 gap-8">
@@ -475,6 +581,9 @@
                         </a>
                         <a href="terminos-condiciones.html" class="block text-gray-300 hover:text-white transition-colors">
                             Términos y condiciones
+                        </a>
+                        <a href="politica-reembolso.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de reembolso
                         </a>
                         <a href="politica-cookies.html" class="block text-gray-300 hover:text-white transition-colors">
                             Política de cookies
@@ -850,6 +959,64 @@
                 icon.style.transform = 'rotate(0deg)';
             }
         }
+
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, setting up form handler...');
+            const form = document.querySelector('form');
+            const successMessage = document.getElementById('success-message');
+            
+            if (!form) {
+                console.error('Form not found!');
+                return;
+            }
+            
+            if (!successMessage) {
+                console.error('Success message element not found!');
+                return;
+            }
+            
+            const submitButton = form.querySelector('button[type="submit"]');
+            
+            if (!submitButton) {
+                console.error('Submit button not found!');
+                return;
+            }
+            
+            console.log('All elements found, adding event listener...');
+
+            form.addEventListener('submit', function(e) {
+                console.log('Form submitted!');
+                e.preventDefault();
+                
+                // Validate form
+                if (!form.checkValidity()) {
+                    console.log('Form validation failed');
+                    form.reportValidity();
+                    return;
+                }
+
+                console.log('Form is valid, showing loading state...');
+                
+                // Show loading state
+                submitButton.disabled = true;
+                submitButton.innerHTML = '<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Enviando...';
+
+                // Simulate form submission (replace with actual submission logic)
+                setTimeout(function() {
+                    console.log('Timeout completed, hiding form and showing success message...');
+                    // Hide form and show success message
+                    form.style.display = 'none';
+                    successMessage.classList.remove('hidden');
+                    
+                    console.log('Success message classes:', successMessage.className);
+                    console.log('Success message display:', window.getComputedStyle(successMessage).display);
+                    
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 2000);
+            });
+        });
     </script>
 </body>
 </html> 

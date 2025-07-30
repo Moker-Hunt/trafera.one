@@ -9,29 +9,47 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 <body class="font-sans">
-    <!-- Header -->
     <header class="bg-white shadow-sm border-b border-gray-100">
         <div class="container-custom">
             <div class="flex items-center justify-between py-4">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <a href="index.html" class="flex items-center">
-                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
-                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h1 class="text-xl font-bold text-heading">Trafera.one</h1>
-                            <p class="text-xs text-text">Servicios de gestión vehicular</p>
-                        </div>
-                    </a>
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-heading">Trafera.one</h1>
+                        <p class="text-xs text-text">Servicios de gestión vehicular</p>
+                    </div>
                 </div>
 
                 <!-- Navigation -->
                 <nav class="hidden md:flex items-center space-x-6">
                     <a href="index.html" class="text-text hover:text-primary transition-colors">Inicio</a>
+                    
+                    <!-- Legal Dropdown -->
+                    <div class="relative group">
+                        <button class="text-text hover:text-primary transition-colors flex items-center">
+                            Legal
+                            <svg class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="politica-privacidad.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Privacidad</a>
+                                <a href="politica-reembolso.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Reembolso</a>
+                                <a href="terminos-condiciones.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Términos y Condiciones</a>
+                                <a href="aviso-legal.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Aviso Legal</a>
+                                <a href="politica-cookies.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Cookies</a>
+                            </div>
+                        </div>
+                    </div>     
+                    <a href="sobre-nosotros.html" class="text-text hover:text-primary transition-colors">Sobre Nosotros</a>
+                    
                 </nav>
 
                 <!-- Mobile menu button -->
@@ -47,6 +65,17 @@
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-4 py-2 space-y-2 bg-light-bg">
                 <a href="index.html" class="block py-2 text-text hover:text-primary">Inicio</a>
+                
+                <!-- Legal Section -->
+                <div class="border-t border-gray-200 pt-2 mt-2">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2 px-2">Legal</div>
+                    <a href="politica-privacidad.html" class="block py-2 px-2 text-text hover:text-primary">Política de Privacidad</a>
+                    <a href="politica-reembolso.html" class="block py-2 px-2 text-text hover:text-primary">Política de Reembolso</a>
+                    <a href="terminos-condiciones.html" class="block py-2 px-2 text-text hover:text-primary">Términos y Condiciones</a>
+                    <a href="aviso-legal.html" class="block py-2 px-2 text-text hover:text-primary">Aviso Legal</a>
+                    <a href="politica-cookies.html" class="block py-2 px-2 text-text hover:text-primary">Política de Cookies</a>
+                </div>
+                <a href="sobre-nosotros.html" class="block py-2 text-text hover:text-primary">Sobre Nosotros</a>
             </div>
         </div>
     </header>
@@ -234,7 +263,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-heading text-white section-padding">
         <div class="container-custom">
             <div class="grid md:grid-cols-4 gap-8">
@@ -276,6 +304,9 @@
                         </a>
                         <a href="terminos-condiciones.html" class="block text-gray-300 hover:text-white transition-colors">
                             Términos y condiciones
+                        </a>
+                        <a href="politica-reembolso.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de reembolso
                         </a>
                         <a href="politica-cookies.html" class="block text-gray-300 hover:text-white transition-colors">
                             Política de cookies

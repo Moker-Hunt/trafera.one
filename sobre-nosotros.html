@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Trafera.one</title>
+    <meta name="description" content="Conoce más sobre Trafera.one y nuestro compromiso con la excelencia en servicios vehiculares">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body class="font-sans">
+    <header class="bg-white shadow-sm border-b border-gray-100">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-heading">Trafera.one</h1>
+                        <p class="text-xs text-text">Servicios de gestión vehicular</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Inicio</a>
+                    
+                    <div class="relative group">
+                        <button class="text-text hover:text-primary transition-colors flex items-center">
+                            Legal
+                            <svg class="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="politica-privacidad.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Privacidad</a>
+                                <a href="politica-reembolso.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Reembolso</a>
+                                <a href="terminos-condiciones.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Términos y Condiciones</a>
+                                <a href="aviso-legal.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Aviso Legal</a>
+                                <a href="politica-cookies.html" class="block px-4 py-2 text-sm text-text hover:bg-gray-50 hover:text-primary transition-colors">Política de Cookies</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="contacto.html" class="text-text hover:text-primary transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2 bg-light-bg">
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Inicio</a>
+                
+                <div class="border-t border-gray-200 pt-2 mt-2">
+                    <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2 px-2">Legal</div>
+                    <a href="politica-privacidad.html" class="block py-2 px-2 text-text hover:text-primary">Política de Privacidad</a>
+                    <a href="politica-reembolso.html" class="block py-2 px-2 text-text hover:text-primary">Política de Reembolso</a>
+                    <a href="terminos-condiciones.html" class="block py-2 px-2 text-text hover:text-primary">Términos y Condiciones</a>
+                    <a href="aviso-legal.html" class="block py-2 px-2 text-text hover:text-primary">Aviso Legal</a>
+                    <a href="politica-cookies.html" class="block py-2 px-2 text-text hover:text-primary">Política de Cookies</a>
+                </div>
+                
+                <a href="contacto.html" class="block py-2 text-text hover:text-primary">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-light-bg py-4">
+        <div class="container-custom">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="index.html" class="inline-flex items-center text-sm font-medium text-text hover:text-primary">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                            </svg>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-text" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="ml-1 text-sm font-medium text-text md:ml-2">Sobre Nosotros</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="section-padding">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h1 class="text-3xl md:text-4xl font-bold text-heading mb-4">
+                        Sobre Nosotros
+                    </h1>
+                    <p class="text-xl text-text max-w-2xl mx-auto">
+                        Conoce más sobre Trafera.one y nuestro compromiso con la excelencia
+                    </p>
+                </div>
+
+                <!-- Problems We Solve Section -->
+                <div class="bg-white rounded-2xl p-8 shadow-card mb-12">
+                    <h2 class="text-2xl font-bold text-heading mb-6 text-center">Los Trámites Gubernamentales No Fueron Creados Pensando en las Personas</h2>
+                    
+                    <p class="text-text mb-8 text-center max-w-3xl mx-auto">
+                        Si eres como nosotros, siempre has temido esos momentos cuando tienes que renovar, 
+                        reemplazar o solicitar un nuevo documento gubernamental. Tienes que hacerlo. 
+                        Y no tienes más opción que lidiar con las frustraciones involucradas.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-heading">Instrucciones Confusas</h3>
+                                    <p class="text-text text-sm">Los sitios web gubernamentales tienen instrucciones complejas y confusas</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-heading">Formularios Desactualizados</h3>
+                                    <p class="text-text text-sm">No estás seguro de qué formularios necesitas o si están actualizados</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-heading">Sin Soporte</h3>
+                                    <p class="text-text text-sm">Es imposible contactar a alguien si tienes preguntas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-heading">Largas Colas</h3>
+                                    <p class="text-text text-sm">Tienes que tomar tiempo de tu día para esperar en largas filas</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-heading">Múltiples Viajes</h3>
+                                    <p class="text-text text-sm">Tienes que recorrer la ciudad para giros, notarios y fotos</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-heading">Miedo a Errores</h3>
+                                    <p class="text-text text-sm">Te preocupa cometer un error y retrasar todo el proceso</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- About Us Information -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <h2 class="text-2xl font-bold text-heading mb-6">Nuestra Historia</h2>
+                        
+                        <div class="space-y-6">
+                            <p class="text-text">
+                                Trafera.one nació de la necesidad de simplificar los trámites vehiculares en la Ciudad de México. 
+                                Fundada por expertos en gestión vehicular, nuestra empresa se ha convertido en el socio confiable 
+                                para miles de ciudadanos que buscan realizar sus trámites de manera eficiente y sin complicaciones.
+                            </p>
+
+                            <p class="text-text">
+                                Desde nuestros inicios, hemos mantenido un compromiso inquebrantable con la transparencia, 
+                                la eficiencia y el servicio al cliente. Cada día trabajamos para hacer que los trámites 
+                                gubernamentales sean más accesibles y menos estresantes para nuestros clientes.
+                            </p>
+
+                            <div class="bg-light-bg rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-heading mb-3">Nuestra Misión</h3>
+                                <p class="text-text">
+                                    Facilitar y agilizar los trámites vehiculares en la Ciudad de México, proporcionando 
+                                    un servicio profesional, transparente y eficiente que permita a nuestros clientes 
+                                    ahorrar tiempo y evitar complicaciones en sus gestiones oficiales.
+                                </p>
+                            </div>
+
+                            <div class="bg-light-bg rounded-xl p-6">
+                                <h3 class="text-lg font-semibold text-heading mb-3">Nuestra Visión</h3>
+                                <p class="text-text">
+                                    Ser la empresa líder en gestión de trámites vehiculares en México, reconocida por 
+                                    su innovación, confiabilidad y compromiso con la satisfacción del cliente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Our Values -->
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <h2 class="text-2xl font-bold text-heading mb-6">Nuestros Valores</h2>
+                        
+                        <div class="space-y-6">
+                            <!-- Transparencia -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 11-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-heading mb-2">Transparencia</h3>
+                                    <p class="text-text">
+                                        Mantenemos una comunicación clara y honesta con nuestros clientes, 
+                                        explicando cada paso del proceso y manteniéndolos informados en todo momento.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Eficiencia -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l2.293 2.293a1 1 0 001.414-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-heading mb-2">Eficiencia</h3>
+                                    <p class="text-text">
+                                        Optimizamos cada proceso para garantizar que nuestros clientes 
+                                        reciban sus documentos en el menor tiempo posible.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Confiabilidad -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-heading mb-2">Confiabilidad</h3>
+                                    <p class="text-text">
+                                        Nuestro equipo de expertos garantiza que cada trámite se realice 
+                                        correctamente y cumpla con todos los requisitos oficiales.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Servicio al Cliente -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-heading mb-2">Servicio al Cliente</h3>
+                                    <p class="text-text">
+                                        Nos comprometemos a brindar atención personalizada y soporte 
+                                        continuo durante todo el proceso de gestión.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Principles Section -->
+                <div class="mt-16">
+                    <h2 class="text-2xl font-bold text-heading mb-8 text-center">Nuestros Principios Rectores</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-2xl p-6 shadow-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-heading">Ahorrando tu Tiempo Valioso</h3>
+                            </div>
+                            <p class="text-text">
+                                En Trafera.one creemos que tienes cosas más importantes que hacer que trámites gubernamentales. 
+                                Por eso nuestra plataforma simplifica el proceso, permitiéndote enfocarte en lo que realmente importa.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 shadow-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-heading">Excelencia en Atención al Cliente</h3>
+                            </div>
+                            <p class="text-text">
+                                No nos conformamos con lo promedio. En Trafera.one superamos tus expectativas con 
+                                un producto que garantiza una experiencia positiva y soporte inigualable.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 shadow-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-heading">Tecnología de Vanguardia</h3>
+                            </div>
+                            <p class="text-text">
+                                Nuestra dedicación a la innovación nos impulsa a utilizar la tecnología más avanzada 
+                                disponible para ofrecerte la solución más precisa y eficiente del mercado.
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 shadow-card">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-heading">Educación Primero</h3>
+                            </div>
+                            <p class="text-text">
+                                Estamos comprometidos a equiparte con el conocimiento que necesitas, incluso si 
+                                decides no usar nuestros servicios. Proporcionamos recursos gratuitos para ayudarte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Services Section -->
+                <div class="mt-16">
+                    <h2 class="text-2xl font-bold text-heading mb-8 text-center">Nuestros Servicios</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-light-bg rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-heading mb-3">Subsidio del 100% en Tenencia</h3>
+                            <p class="text-text">Gestión del subsidio para vehículos que cumplan los requisitos establecidos por el gobierno de la CDMX.</p>
+                        </div>
+
+                        <div class="bg-light-bg rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-heading mb-3">Certificado de No Adeudo</h3>
+                            <p class="text-text">Obtención de certificados oficiales de no adeudo para diversos trámites vehiculares.</p>
+                        </div>
+
+                        <div class="bg-light-bg rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-heading mb-3">Asesoramiento Personalizado</h3>
+                            <p class="text-text">Consultoría especializada en trámites vehiculares con atención personalizada.</p>
+                        </div>
+
+                        <div class="bg-light-bg rounded-xl p-6">
+                            <h3 class="text-lg font-semibold text-heading mb-3">Seguimiento de Trámites</h3>
+                            <p class="text-text">Monitoreo continuo del estado de las solicitudes y actualizaciones en tiempo real.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Government Efficiency Section -->
+                <div class="mt-16">
+                    <div class="bg-gradient-to-r from-primary to-primary-dark text-white rounded-2xl p-8 shadow-card">
+                        <h2 class="text-2xl font-bold mb-6 text-center">Y Estamos Mejorando la Eficiencia Gubernamental en el Proceso</h2>
+                        
+                        <p class="text-lg mb-6 text-center max-w-3xl mx-auto">
+                            Las agencias gubernamentales aprecian la calidad excepcional de las solicitudes 
+                            presentadas a través de nuestra plataforma, lo que resulta en menos retrasos y 
+                            procesamiento más rápido de aplicaciones.
+                        </p>
+
+                        <div class="grid md:grid-cols-3 gap-6 mt-8">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l2.293 2.293a1 1 0 001.414-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">Menos Retrasos</h3>
+                                <p class="text-sm opacity-90">Solicitudes completas y precisas desde el primer intento</p>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">Procesamiento Más Rápido</h3>
+                                <p class="text-sm opacity-90">Aceleramos el procesamiento de todas las solicitudes</p>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-semibold mb-2">Ahorro de Recursos</h3>
+                                <p class="text-sm opacity-90">Optimizamos los recursos gubernamentales y ahorramos dinero público</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics Section -->
+                <div class="mt-16">
+                    <h2 class="text-2xl font-bold text-heading mb-8 text-center">Trafera.one en Números</h2>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white rounded-2xl p-6 shadow-card text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">5,000+</div>
+                            <h3 class="text-lg font-semibold text-heading mb-2">Trámites Completados</h3>
+                            <p class="text-text text-sm">Solicitudes procesadas exitosamente</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-2xl p-6 shadow-card text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">2,500+</div>
+                            <h3 class="text-lg font-semibold text-heading mb-2">Horas Ahorradas</h3>
+                            <p class="text-text text-sm">Tiempo ahorrado a nuestros clientes</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-2xl p-6 shadow-card text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">98%</div>
+                            <h3 class="text-lg font-semibold text-heading mb-2">Satisfacción del Cliente</h3>
+                            <p class="text-text text-sm">Clientes satisfechos con nuestro servicio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Section -->
+                <div class="mt-16">
+                    <h2 class="text-2xl font-bold text-heading mb-8 text-center">Nuestro Equipo</h2>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-card">
+                        <p class="text-text mb-6">
+                            Contamos con un equipo de profesionales altamente capacitados en gestión vehicular, 
+                            con años de experiencia en trámites gubernamentales y un profundo conocimiento de 
+                            las regulaciones y procedimientos oficiales de la Ciudad de México.
+                        </p>
+
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                            <p class="text-blue-800">
+                                <strong>Compromiso con la Excelencia:</strong> Cada miembro de nuestro equipo 
+                                está comprometido con brindar el mejor servicio posible, manteniendo los más 
+                                altos estándares de calidad y profesionalismo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-heading text-white section-padding">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold">Trafera.one</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Servicios de gestión vehicular en la Ciudad de México. 
+                        <strong>No somos un sitio oficial del gobierno.</strong>
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Ciudad de México</p>
+                        <p>contacto@trafera.one</p>
+                    </div>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Información Legal</h4>
+                    <div class="space-y-2">
+                        <a href="politica-privacidad.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de privacidad
+                        </a>
+                        <a href="aviso-legal.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Aviso legal
+                        </a>
+                        <a href="terminos-condiciones.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Términos y condiciones
+                        </a>
+                        <a href="politica-reembolso.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de reembolso
+                        </a>
+                        <a href="politica-cookies.html" class="block text-gray-300 hover:text-white transition-colors">
+                            Política de cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Trafera.one. Todos los derechos reservados.</p>
+                <p class="text-sm mt-2">
+                    <strong>Importante:</strong> Este sitio no es oficial del gobierno de la Ciudad de México.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container-custom py-4">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <h3 class="text-lg font-semibold text-heading mb-2">🍪 <strong>Usamos cookies</strong></h3>
+                    <p class="text-sm text-text mb-4">
+                        Utilizamos cookies propias y de terceros para garantizar el funcionamiento del sitio web, personalizar el contenido, ofrecer funciones de redes sociales y analizar el tráfico. También compartimos información sobre el uso que haga del sitio con nuestros socios de análisis y publicidad, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
+                    </p>
+                    <p class="text-sm text-text mb-4">
+                        Puedes aceptar todas las cookies, rechazarlas, o configurar cuáles deseas permitir. Puedes cambiar tu configuración en cualquier momento.
+                    </p>
+                    <p class="text-sm text-text mb-4">
+                        Consulta nuestra <a href="politica-cookies.html" class="text-primary hover:underline">Política de cookies</a> para más información.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <button id="cookie-reject" class="px-4 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        Rechazar
+                    </button>
+                    <button id="cookie-settings" class="px-4 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                        Configurar
+                    </button>
+                    <button id="cookie-accept" class="px-4 py-2 text-sm bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+                        Aceptar todas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookie-modal" class="cookie-modal">
+        <div class="cookie-modal-content p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-heading">Configuración de cookies</h2>
+                <button id="close-modal" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="space-y-4 mb-6">
+                <div class="cookie-category required">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">🍪 Cookies necesarias</h3>
+                            <p class="text-sm text-text mb-2">
+                                Requeridas para el funcionamiento básico del sitio. No pueden ser desactivadas.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• session_id: Mantiene tu sesión activa</li>
+                                <li>• csrf_token: Protección de seguridad</li>
+                                <li>• language: Tu idioma preferido</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" checked disabled>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">📊 Cookies de análisis</h3>
+                            <p class="text-sm text-text mb-2">
+                                Nos ayudan a entender cómo utilizas nuestro sitio para mejorarlo.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• Google Analytics: Análisis de tráfico</li>
+                                <li>• _gat: Control de frecuencia</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" id="analytics-cookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-heading mb-2">🎯 Cookies de marketing</h3>
+                            <p class="text-sm text-text mb-2">
+                                Utilizadas para mostrar publicidad relevante y medir campañas.
+                            </p>
+                            <ul class="text-xs text-text space-y-1">
+                                <li>• Meta Pixel: Seguimiento de conversiones</li>
+                                <li>• Google Ads: Optimización publicitaria</li>
+                            </ul>
+                        </div>
+                        <label class="toggle-switch ml-4">
+                            <input type="checkbox" id="marketing-cookies">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 justify-end">
+                <button id="save-preferences" class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
+                    Guardar preferencias
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Cookie Banner Styles */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        .cookie-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .cookie-modal.show {
+            display: flex;
+        }
+
+        .cookie-modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cookie-category {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cookie-category.required {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2E7D32;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+        input:disabled + .slider {
+            background-color: #2E7D32;
+            cursor: not-allowed;
+        }
+    </style>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Cookie management
+        class CookieManager {
+            constructor() {
+                this.cookieConsent = this.getCookieConsent();
+                this.init();
+            }
+
+            init() {
+                if (!this.cookieConsent) {
+                    this.showBanner();
+                }
+                this.setupEventListeners();
+            }
+
+            getCookieConsent() {
+                return localStorage.getItem('cookieConsent');
+            }
+
+            setCookieConsent(consent) {
+                localStorage.setItem('cookieConsent', JSON.stringify(consent));
+            }
+
+            showBanner() {
+                const banner = document.getElementById('cookie-banner');
+                setTimeout(() => {
+                    banner.classList.add('show');
+                }, 1000);
+            }
+
+            hideBanner() {
+                const banner = document.getElementById('cookie-banner');
+                banner.classList.remove('show');
+            }
+
+            showModal() {
+                const modal = document.getElementById('cookie-modal');
+                modal.classList.add('show');
+            }
+
+            hideModal() {
+                const modal = document.getElementById('cookie-modal');
+                modal.classList.remove('show');
+            }
+
+            acceptAll() {
+                const consent = {
+                    necessary: true,
+                    analytics: true,
+                    marketing: true,
+                    timestamp: new Date().toISOString()
+                };
+                this.setCookieConsent(consent);
+                this.hideBanner();
+                this.loadAnalytics();
+                this.loadMarketing();
+            }
+
+            rejectAll() {
+                const consent = {
+                    necessary: true,
+                    analytics: false,
+                    marketing: false,
+                    timestamp: new Date().toISOString()
+                };
+                this.setCookieConsent(consent);
+                this.hideBanner();
+            }
+
+            savePreferences() {
+                const analytics = document.getElementById('analytics-cookies').checked;
+                const marketing = document.getElementById('marketing-cookies').checked;
+                
+                const consent = {
+                    necessary: true,
+                    analytics: analytics,
+                    marketing: marketing,
+                    timestamp: new Date().toISOString()
+                };
+                
+                this.setCookieConsent(consent);
+                this.hideModal();
+                this.hideBanner();
+                
+                if (analytics) this.loadAnalytics();
+                if (marketing) this.loadMarketing();
+            }
+
+            loadAnalytics() {
+                // Google Analytics would be loaded here
+                console.log('Loading analytics cookies...');
+            }
+
+            loadMarketing() {
+                // Marketing cookies would be loaded here
+                console.log('Loading marketing cookies...');
+            }
+
+            setupEventListeners() {
+                document.getElementById('cookie-accept').addEventListener('click', () => this.acceptAll());
+                document.getElementById('cookie-reject').addEventListener('click', () => this.rejectAll());
+                document.getElementById('cookie-settings').addEventListener('click', () => this.showModal());
+                document.getElementById('close-modal').addEventListener('click', () => this.hideModal());
+                document.getElementById('save-preferences').addEventListener('click', () => this.savePreferences());
+                
+                // Close modal when clicking outside
+                document.getElementById('cookie-modal').addEventListener('click', (e) => {
+                    if (e.target.id === 'cookie-modal') {
+                        this.hideModal();
+                    }
+                });
+            }
+        }
+
+        // Initialize cookie manager when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            new CookieManager();
+        });
+    </script>
+</body>
+</html> 
